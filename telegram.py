@@ -30,9 +30,6 @@ class Telegram:
                 message = result['message']['text'] 
                 chat_id = result['message']['chat']['id']
 
-                response = callback({'self' : self,
-                    'message' : message, 'chat_id' : chat_id})
-
-                self.sendMessage(chat_id, response, parse_mode)
+                callback(self, message, chat_id)
 
                 offset = result['update_id'] + 1

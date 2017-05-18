@@ -1,2 +1,2 @@
-# telegram.py
-telegram.py is a minimalistic Python framework for Telegram.
+# pytelegram
+`pytelegram` is a minimalistic Python framework for Telegram.
